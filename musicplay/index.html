@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+          <!-- Header -->
+          <header>
+            <h4>Now playing:</h4>
+            <h2>String 57th & 9th</h2>
+          </header>
+      
+          <!-- CD -->
+          <div class="cd">
+            <div class="cd-thumb" style="background-image: url('data:image/png;base64,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')">
+            </div>
+          </div>
+      
+          <!-- Control -->
+          <div class="control">
+            <div class="btn btn-repeat">
+              <i class="fas fa-redo"></i>
+            </div>
+            <div class="btn btn-prev">
+              <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="btn btn-toggle-play">
+              <i class="fas fa-pause icon-pause"></i>
+              <i class="fas fa-play icon-play"></i>
+            </div>
+            <div class="btn btn-next">
+              <i class="fas fa-step-forward"></i>
+            </div>
+            <div class="btn btn-random">
+              <i class="fas fa-random"></i>
+            </div>
+          </div>
+      
+          <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+      
+          <audio id="audio" src=""></audio>
+        </div>
+      
+        <!-- Playlist -->
+        <div class="playlist">
+       
+        
+        </div>
+      </div>
+      <script>
+          const $ = document.querySelector.bind(document)
+          const $$ = document.querySelector.bind(document)
+
+          const heading = $('header h2')
+          const cdthum = $('.cd-thumb')
+          const audio = $('audio')
+          const cdD= $('.cd')
+          const playbtn = $('.btn-toggle-play')
+          const player = $('.player')
+
+          const next = $('.btn-next')
+
+          const pre = $('.progress')
+
+          const app = {
+              isplaysongs : false,
+              currentIndex : 0,
+              songs : [
+                  {
+                      name : 'hong',
+                      singer: 'vy',
+                      path : './assets/music/song1.mp3',
+                      image : './assets/image/image1.jpg'
+                  },
+                  {
+                      name : 'hong',
+                      singer: 'vy',
+                      path : './assets/music/song2.mp3',
+                      image : './assets/image/image2.jpg'
+                  },
+              ],
+              render : function(){
+                const htmls = this.songs.map(song => {
+                    return `
+                   <div class="song">
+                  <div class="thumb" style="background-image: url('${song.image}')">
+                  </div>
+                   <div class="body">
+                   <h3 class="title">${song.name}</h3>
+                    <p class="author">${song.singer}</p>
+                    </div>
+                    <div class="option">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                     </div>
+                `
+                })
+                $('.playlist').innerHTML = htmls.join('')
+              },
+              defineProperties : function(){
+                Object.defineProperty(this, 'currenSongs',{
+                    get : function(){
+                        return this.songs[this.currentIndex]
+                    }
+                })
+              },
+              handel : function(){
+                const _this= this
+                const cdwidth = cdD.offsetWidth
+                // xử lí phóng to thu nhỏ
+                document.onscroll = function(){  //onscroll lắng nge sự kiện cuộn màn hình
+                    const croll = window.scrollY || document.documentElement.scrollTop // in ra giá trị px khi cuộn màn hình
+                    const mewwidth = cdwidth - croll
+                    cdD.style.width= mewwidth > 0 ? mewwidth + 'px' : 0
+                    cdD.style.opacity = mewwidth / cdwidth
+                }
+                //xử lí nút play
+                playbtn.onclick = function(){
+                  if(_this.isplaysongs) {
+                    audio.pause()
+                  }
+                  else{
+                    audio.play(); 
+                  }
+                  
+                }
+                // sử lí play
+                audio.onplay = function(){
+                  _this.isplaysongs=true
+                  player.classList.add('playing') 
+                  transtion.play()
+                }
+                // xử lí pause
+                audio.onpause = function(){
+                  _this.isplaysongs = false
+                  player.classList.remove('playing') 
+                  transtion.pause()
+                }
+                // sử lí chạy theo nhạc
+                audio.ontimeupdate = function(){
+                 const go = Math.floor(audio.currentTime / audio.duration  * 100)
+                  pre.value = go
+                }
+                //sử lí tua
+                pre.onchange = function(e){
+                 const seekTime = audio.duration / 100 * e.target.value
+                 audio.currentTime = seekTime
+                }
+                // sử lí next
+                next.onclick = function(){
+                  _this.nextsong()
+                  audio.play()
+                }  
+                 // sử lí pre
+                 $('.btn-prev').onclick = function(){
+                  _this.nextsong()
+                  audio.play()
+                }        
+                //suer lí xoay ảnh
+               var transtion= cdthum.animate(
+                [
+                    { transform: 'rotate(3600deg)' }  
+                ] , {
+                      duration: 20000,
+                       iterations: Infinity
+                }
+                );
+                transtion.pause()
+                },
+              loaddingsong : function(){
+                heading.textContent = this.currenSongs.name
+                cdthum.style.backgroundImage = `url('${this.currenSongs.image}')`
+                audio.src = this.currenSongs.path
+              },
+              nextsong : function(){
+              this.currentIndex++
+              if(this.currentIndex >= this.songs.length ){
+                this.currentIndex = 0
+              }
+              this.loaddingsong()
+              },
+              presong : function(){
+              this.currentIndex--
+              if(this.currentIndex < 0 ){
+                this.currentIndex = this.songs.length-1
+              }
+              this.loaddingsong()
+              },
+              start : function(){
+                this.defineProperties()
+                this.handel()
+                this.render()
+                this.loaddingsong()
+                this.nextsong()
+              }
+          }
+          app.start()
+
+     
+      </script>
+</body>
+</html>

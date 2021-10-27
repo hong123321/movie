@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="jquery.twbsPagination.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header_manu_list">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="https://3.bp.blogspot.com/-grucgojhA5k/ViS9aiVnWJI/AAAAAAAAzCs/yW4pZH8B_ug/s1600/logo_phim.jpg"> </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="search"><a href="search.html"><i class="fas fa-search"></i> Tìm kiếm</a></li>
+                    <li><a href="oddmovie.html">Phim lẻ</a></li>
+                    <li><a href="serimovie.html">Phim bộ</a></li>
+                    <li><a href="#">Tất cả phim</a></li>
+                    <li><a href="#">TQA</a></li>
+                </ul>
+                <div class="header_manu_authen">
+                    <button type="button" class="btn-login btn-danger">Đăng nhập</button>
+                </div>
+            </nav>
+        </div>
+        <div class="" style="margin-top: 8%;margin-left: -16.5%;">
+            <h1>PHIM LẺ</h1>
+        </div>
+        <div class='body'>
+            <div class="header_select formgroup-phimle">
+                <div class="dropdown">
+                    <h3>Thể loại:</h3>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu droppdown_Category" role="menu" aria-labelledby="menu1">
+
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <h3>Quốc gia:</h3>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown_country" role="menu" aria-labelledby="menu1">
+
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <h3>Năm:</h3>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
+                   <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <h3>Thời lượng:</h3>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                    </ul>
+                </div>
+                <div class="list_icon"></div>
+                <div class="dropdown">
+                    <h3>Sắp xếp:</h3>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
+                <span class="caret"></span>
+            </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                    </ul>
+
+                </div>
+                <div class="list_icon">
+                    <h3>Hiện thị</h3>
+                    <div class="icon"><i class="fas fa-list"></i>
+                        <i class="fas fa-th-list"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-movie movie fiter">
+
+            </div>
+
+            <div class="movies_item_title">
+
+            </div>
+            <div id="content" class="row row-movie row-oddmovie">
+
+
+            </div>
+
+            <ul class="sync-pagination"></ul>
+
+            </ul>
+
+
+        </div>
+    </div>
+    <div class="footer_title">
+        <h3>Phim chờ xử lí</h3>
+        <p>U-Turn (2020)Snake Eyes: G.I. Joe Origins (2021)Beijing Love Story (2014)Furry Vengeance (2010)Barbie Mariposa And The Fairy Princess (2013)A Perfect Man (2013)Dark House (2014)Rabid Love (2013)My Little Hero (2013)Tiny Times (2013)Tiny Times
+            2 (2013)Amer (2009)P-51 Dragon Fighter (2014)The Black Water Vampire (2014)Boxer From Shantung (1972)Invasion Roswell (2013)The Yakuza (1974)513 Degrees (2013)Black Christmas (2006)Patrick (2013)
+        </p>
+        <p style="cursor: pointer;"><i class="fas fa-play"></i> Xem tất cả</p>
+    </div>
+
+
+    <div class="footer_contact" style="background-image:url('https://xemphim.club/static/skin/footer-bg.jpg')">
+        <div class="footer_contact__title">
+            <div class="title">
+                <h3>Phim chất lượng cao online của XemPhim khác gì so với các trang phim khác?</h3>
+                <ol>
+                    <ul class="title">
+                        <li>Là phim bluray (reencoded), có độ phân giải thấp nhất là Full HD (1080p), trong khi hầu hết các trang phim khác chỉ có tới độ phân giải HD (720p) là cao nhất</li>
+                        <li>Chất lượng cao, lượng dữ liệu trên giây (bitrate) gấp từ 5 - 10 lần phim online thông thường - đây là yếu tố quyết định độ nét của phim (thậm chí còn quan trọng hơn độ phân giải)</li>
+                    </ul>
+                </ol>
+                <div class="footer_contact_button"><a> Liên Hệ </a></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal__over"></div>
+        <div class="model__body">
+            <div class="modal__inner">
+                <!-- res -->
+                <div class="auth-form form-auth">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form_heading">Đăng kí</h3>
+                            <span class="auth-form__switch-btn show_log">Đăng nhập</span>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                đăng kí để nhaa thông tin trang chủ
+                            </p>
+                        </div>
+                        <div class="auth-form__control">
+                            <button class="btn btn--back auth-form__control-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÍ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-fb btn btn--s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth__icon-label">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="auth-form__socials-gg btn btn--s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth__icon-label">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- login -->
+                <div class="auth-form login-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form_heading">Đăng Nhập</h3>
+                            <span class="auth-form__switch-btn show-res">Đăng Kí</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="form__help">
+                            <a href="" class="form__help-link form__help-pricolor ">Quên mật khẩu</a>
+                            <span class="form__help--noiti"></span>
+                            <a href="" class="form__help-link">Cần trở giúp ?</a>
+                        </div>
+                        <div class="auth-form__control">
+                            <button class="btn btn--back auth-form__control-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-fb btn btn--s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth__icon-label">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="auth-form__socials-gg btn btn--s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth__icon-label">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/main.js">
+    </script>
+    <script src="../assets/js/api.js">
+    </script>
+    <script src="../assets/js/detail.js">
+    </script>
+    <script src="../assets/js/search.js">
+    </script>
+    <script src="../assets/js/authen.js">
+    </script>
+    <script src="../assets/js/oddmovie.js">
+    </script>
+    <script src="../assets/js/serimovie.js">
+    </script>
+    <script src="../assets/js/filter.js">
+    </script>
+</body>
+
+</html>

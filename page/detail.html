@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid container_detail">
+       <app-header></app-header>
+        <div class="header_detail">
+        
+            </div>
+            <div class="row header_row">
+                <div class="col-md-3 col-img">
+                   
+                    <div class="header_detail-btn">
+                        <a href="playvideo.html"> <i class="fas fa-play playbtn"></i> XEM PHIM</a>
+
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="movie_name">
+                        
+                        <div class="movie_social">
+                            <div class="button_share">
+                                <div class="button_facebook "><button type="button" class="btn btn-primary "><i class="fab fa-facebook"></i>Chia sẻ</button></div>
+                                <div class="button_collection "><button type="button" class="btn btn-success "><i class="fas fa-plus"></i>Bộ Sưu Tập</button></div>
+                            </div>
+                            <div class="Category">
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="movie_country">
+                            <p>QUỐC GIA :</p>
+                         
+                        </div>
+                        <div class="movie_time_start">
+                            <p>KHỞI CHIẾU :</p>
+                        
+                        </div>
+                        <div class="movie_title">
+                           
+                        </div>
+                        <div class="movie_performer_title">
+                            <p>DIỄN VIÊN</p>
+                        </div>
+                        <div class="slider perfor">
+                            <a href="detailperfor.html?id=${val.id}" style="text-decoration:none; margin:0 10px;">
+                                <div class="imgSlick">
+                               
+                            </div>
+                            </a>
+
+                        </div>
+                        <div class="movie_performer_title">
+                            <p>TRAILER</p>
+                        </div>
+                        <div class="movie_trailer">
+                            <div class="movie_trailer_detail">
+                                <div class="movie_trailer_detail-img">
+                                    <iframe src="">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer_contact" style="background-image:url('https://xemphim.club/static/skin/footer-bg.jpg')">
+            <div class="footer_contact__title">
+                <div class="title">
+                    <h3>Phim chất lượng cao online của XemPhim khác gì so với các trang phim khác?</h3>
+                    <ol>
+                        <ul class="title">
+                            <li>Là phim bluray (reencoded), có độ phân giải thấp nhất là Full HD (1080p), trong khi hầu hết các trang phim khác chỉ có tới độ phân giải HD (720p) là cao nhất</li>
+                            <li>Chất lượng cao, lượng dữ liệu trên giây (bitrate) gấp từ 5 - 10 lần phim online thông thường - đây là yếu tố quyết định độ nét của phim (thậm chí còn quan trọng hơn độ phân giải)</li>
+                        </ul>
+                    </ol>
+                    <div class="footer_contact_button"><a> Liên Hệ </a></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal__over"></div>
+            <div class="model__body">
+                <div class="modal__inner">
+                    <!-- đăng kí đăng nhập -->
+                    <div class="auth-form form-auth">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form_heading">Đăng kí</h3>
+                                <span class="auth-form__switch-btn show_log">Đăng nhập</span>
+                            </div>
+
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">
+                                    đăng kí để nhaa thông tin trang chủ
+                                </p>
+                            </div>
+                            <div class="auth-form__control">
+                                <button class="btn btn--back auth-form__control-back">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG KÍ</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials-fb btn btn--s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                                <span class="auth__icon-label">Kết nối với Facebook</span>
+                            </a>
+                            <a href="" class="auth-form__socials-gg btn btn--s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-google"></i>
+                                <span class="auth__icon-label">Kết nối với Google</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- login -->
+                    <div class="auth-form login-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form_heading">Đăng Nhập</h3>
+                                <span class="auth-form__switch-btn show-res">Đăng Kí</span>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                                </div>
+                            </div>
+                            <div class="form__help">
+                                <a href="" class="form__help-link form__help-pricolor ">Quên mật khẩu</a>
+                                <span class="form__help--noiti"></span>
+                                <a href="" class="form__help-link">Cần trở giúp ?</a>
+                            </div>
+                            <div class="auth-form__control">
+                                <button class="btn btn--back auth-form__control-back">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials-fb btn btn--s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                                <span class="auth__icon-label">Kết nối với Facebook</span>
+                            </a>
+                            <a href="" class="auth-form__socials-gg btn btn--s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-google"></i>
+                                <span class="auth__icon-label">Kết nối với Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/detail.js"></script>
+    <script src="../assets/js/detailtvshow.js"></script>
+    <script src="../assets/js/detailperfor.js"></script>
+</body>
+
+</html>
