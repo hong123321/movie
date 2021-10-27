@@ -45,71 +45,82 @@
             <h1>PHIM BỘ</h1>
         </div>
         <div class='body'>
-            <div class="header_select formgroup-phimle">
-                <div class="dropdown">
-                    <h3>Thể loại:</h3>
-                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu droppdown_Category" role="menu" aria-labelledby="menu1">
-
-                    </ul>
+            <div class="row">
+                <div class="col-md-4 form_select">
+                    <div class="form-group">
+                        <label for="sel1">Thể loại</label>
+                        <select class="form-control droppdown_Category genre" id="sel1">
+                              <option value="" selected>--Tất cả--</option>
+                     
+                        </select>
+                    </div>
                 </div>
-                <div class="dropdown">
-                    <h3>Quốc gia:</h3>
-                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu dropdown_country" role="menu" aria-labelledby="menu1">
-
-                    </ul>
+                <div class="col-md-4 form_select">
+                    <div class="form-group">
+                        <label for="sel1">Quốc gia:</label>
+                        <select class="form-control droppdown_country region" id="sel1">
+                            <option value="" selected>--Tất cả--</option>
+                
+                            </select>
+                    </div>
                 </div>
-                <div class="dropdown">
-                    <h3>Năm:</h3>
-                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
-                   <span class="caret"></span></button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
-                    </ul>
+                <div class="col-md-4 form_select">
+                    <div class="form-group">
+                        <label for="sel1">Năm:</label>
+                        <select class="form-control droppdown_year year" id="sel1">
+                            <option value="" selected> - Tất cả - </option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            </select>
+                    </div>
                 </div>
-                <div class="dropdown">
-                    <h3>Thời lượng:</h3>
-                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
-                    </ul>
-                </div>
-                <div class="list_icon"></div>
-                <div class="dropdown">
-                    <h3>Sắp xếp:</h3>
-                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tất cả
-                <span class="caret"></span>
-            </button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
-                    </ul>
-
-                </div>
-                <div class="list_icon">
-                    <h3>Hiện thị</h3>
-                    <div class="icon"><i class="fas fa-list"></i>
-                        <i class="fas fa-th-list"></i>
+                <div class="col-md-4 form_select">
+                    <div class="form-group">
+                        <label for="sel1">Sắp xếp:</label>
+                        <select class="form-control droppdown_date order-by" id="sel1">
+                            <option value="">Ngày cập nhật</option>
+                            <option value="release_date.desc ">Ngày phát hành</option>
+                            <option value="vote_average.desc ">Điểm đánh giá</option>
+                            </select>
                     </div>
                 </div>
             </div>
             <div class="row row-movie movie fiter">
 
             </div>
-            <div class="movies_item_title">
+            <div class="grid__full-width">
+                <div class="movies_item_title">
 
+                    <h3>PHIM ĐỀ CỬ</h3>
+                </div>
+                <div class="row row-movie movie">
+
+                </div>
+                <div class="title">
+                    <div class="movies_item_title">
+                        <h3>PHIM LẺ MỚI CẬP NHẬT</h3>
+                        <p>Xem tất cả <i class="fas fa-play"></i></p>
+                    </div>
+                </div>
+                <div class="row row-movie popular">
+
+                </div>
+
+                <div class="title">
+                    <div class="movies_item_title">
+                        <h3>PHIM BỘ MỚI CẬP NHẬT</h3>
+                        <p>Xem tất cả <i class="fas fa-play"></i></p>
+                    </div>
+                </div>
+                <div class="row row-movie tvpopular">
+
+                </div>
             </div>
-            <div id="seriMovie" class="row row-movie row-seriesmovie">
-
-
-            </div>
-
-            <ul class="pagination"></ul>
-
-            </ul>
+        </div>
         </div>
     </div>
     <div class="footer_title">
